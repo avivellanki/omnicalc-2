@@ -11,4 +11,8 @@ Rails.application.routes.draw do
   
   self.get("/divide", {:controller => "application", :action => "divide"})
   self.get("/wizard_divide", {:controller => "application", :action => "wizard_divide"})
+
+  self.get("/street_to_coords/new", {:controller => "streetcoord", :action => "get_user_info"})
+  self.get("/results", {:controller => "streetcoord", :action => "get_lat_lon_info"})
+  
 end
